@@ -11,7 +11,7 @@ public partial class IncomesAndExpensesChartComponent : ComponentBase
     #region Properties
 
     public ChartOptions Options { get; set; } = new();
-    public List<ChartSeries>? Series { get; set; }
+    public List<ChartSeries>? Series { get; set; } 
     public List<string> Labels { get; set; } = [];
 
     #endregion
@@ -32,7 +32,7 @@ public partial class IncomesAndExpensesChartComponent : ComponentBase
     {
         var request = new GetIncomesAndExpensesRequest();
         var result = await Handler.GetIncomesAndExpensesReportAsync(request);
-        if (!result.IsSuccess || result.Data is null)
+        if (result is null || !result.IsSuccess || result.Data is null)
         {
             Snackbar.Add("Não foi possível obter os dados do relatório", Severity.Error);
             return;

@@ -1,8 +1,10 @@
 using System.Net.Http.Json;
+using System.Text.Json.Serialization;
 using Dima.Core.Handlers;
 using Dima.Core.Models.Reports;
 using Dima.Core.Requests.Reports;
 using Dima.Core.Responses;
+using Newtonsoft.Json;
 
 namespace Dima.Web.Handlers;
 

@@ -1,6 +1,7 @@
 @inherits IncomesAndExpensesChartComponent
+@attribute [StreamRendering(true)]
 
-@if (Series is not null)
+@if (Series is not null && Series.Count > 0)
 {
     <MudChart
         ChartOptions="Options"

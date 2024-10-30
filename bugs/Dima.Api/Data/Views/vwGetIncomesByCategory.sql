@@ -13,7 +13,7 @@ CREATE OR ALTER VIEW [vwGetIncomesByCategory] AS
             >= DATEADD(MONTH, -11, CAST(GETDATE() AS DATE))
       AND [Transaction].[PaidOrReceivedAt]
         < DATEADD(MONTH, 1, CAST(GETDATE() AS DATE))
-      AND [Transaction].[Type] = 1
+      AND [Transaction].[Type] = 2
     GROUP BY
         [Transaction].[UserId],
         [Category].[Title],

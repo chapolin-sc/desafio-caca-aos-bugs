@@ -54,7 +54,7 @@
 
     private bool _isDrawerOpened = true;
     private bool _isDarkMode = true;
-    private MudThemeProvider _mudThemeProvider = null!;
+    private MudThemeProvider _mudThemeProvider = new MudThemeProvider();
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {

@@ -17,6 +17,11 @@ if (app.Environment.IsDevelopment())
     app.ConfigureDevEnvironment();
 
 app.UseCors(ApiConfiguration.CorsPolicyName);
+/*app.UseCors(builder => builder
+     .AllowAnyOrigin()
+     .AllowAnyMethod()
+     .AllowAnyHeader());
+     //.AllowCredentials());*/
 app.UseSecurity();
 app.MapEndpoints();
 

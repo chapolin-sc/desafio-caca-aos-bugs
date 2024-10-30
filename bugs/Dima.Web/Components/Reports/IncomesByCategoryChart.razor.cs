@@ -35,7 +35,8 @@ public partial class IncomesByCategoryChartComponent : ComponentBase
     {
         var request = new GetIncomesByCategoryRequest();
         var result = await Handler.GetIncomesByCategoryReportAsync(request);
-        if (!result.IsSuccess || result.Data is null)
+
+        if (result is null || !result.IsSuccess || result.Data is null)
         {
             Snackbar.Add("Falha ao obter dados do relatório", Severity.Error);
             return;

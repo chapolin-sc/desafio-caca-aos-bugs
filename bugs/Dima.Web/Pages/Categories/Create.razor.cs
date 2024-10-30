@@ -32,7 +32,6 @@ public partial class CreateCategoryPage : ComponentBase
     public async Task OnValidSubmitAsync()
     {
         IsBusy = true;
-
         try
         {
             var result = await Handler.CreateAsync(InputModel);

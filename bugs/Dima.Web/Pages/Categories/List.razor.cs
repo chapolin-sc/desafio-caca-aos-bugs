@@ -33,6 +33,7 @@ public partial class ListCategoriesPage : ComponentBase
 
     protected override async Task OnInitializedAsync()
     {
+        Categories = new List<Category>();
         IsBusy = true;
         try
         {
