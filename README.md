@@ -32,15 +32,15 @@ Henrique Weege - https://github.com/henriqueweege
 * Muito conhecimento técnico
 
 ## 🧪 Como testar o projeto
-🧪 Como testar o projeto
-    Clonar o projeto
-    Definir a connection string no appsettings.json no projeto Dima.Api
-    Abrir um terminal na raiz do projeto  Dima.Api e executar o comando dotnet ef database update
-    Executar ambos os projetos Dima.Api e Dima.Web:
-    dotnet clean
-    dotnet restore
-    dotnet build
-    dotnet run
+
+* Clonar o projeto
+* Definir a connection string no appsettings.json no projeto Dima.Api
+* Abrir um terminal na raiz do projeto  Dima.Api e executar o comando dotnet ef database update
+* Executar ambos os projetos Dima.Api e Dima.Web:
+* dotnet clean
+* dotnet restore
+* dotnet build
+* dotnet run
 
 # 💜 Participe
 Quer participar dos próximos desafios? Junte-se a [maior comunidade .NET do Brasil 🇧🇷 💜](https://balta.io/discord)
